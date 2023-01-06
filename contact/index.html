@@ -13,8 +13,14 @@
     <!-- CSRF token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="shortcut icon" href="/favicon.ico"><style type="text/css">
-.navbar{
-  margin-bottom: 80px;
+.header{
+  margin-bottom: 4rem;
+}
+.sub-menu{
+    padding-left: 3rem;
+}
+.sub-menu .list-group-item:hover{
+    cursor: pointer;
 }
 a{
   text-decoration: none !important;
@@ -23,6 +29,17 @@ a{
 }
 a:hover{
   color: rgb(114, 85, 22) !important;
+}
+.menu-btn-in-phone{
+    display: none !important;
+}
+@media screen and (max-width: 738px) {
+.menu-in-phone{
+    display: none !important;
+}
+.menu-btn-in-phone{
+    display: block !important;
+}
 }
 </style><style type="text/css">
 .container[data-v-0824b7d4]{
@@ -13569,8 +13586,9 @@ input[type=color].form-control:disabled {
   vertical-align: text-bottom;
 }</style><style type="text/css">x-vue-echarts{display:block;width:100%;height:100%;min-width:0}
 </style><style type="text/css">
-.chart[data-v-6d743ed5] {
+.chart[data-v-20d1ef86] {
   height: 400px;
+  background-color: white !important;
 }
 </style><style type="text/css">
 p[data-v-49d21501]{
@@ -13617,10 +13635,14 @@ img[data-v-727f0e3d]:hover {
     opacity: 0.8;
 }
 
+</style><style type="text/css">
+.post-img{
+    width: 100%;
+    border-radius: 0.8rem;
+}
 </style></head>
   <body>
-    <div data-v-0824b7d4="" id="app"><div data-v-0824b7d4="" class="header"><nav class="navbar px-5 py-2 navbar-light bg-faded navbar-expand"><a href="/" target="_self" class="navbar-brand d-flex align-items-center"><img src="/logo.png?bc64160216d43137f87fb2ab64939378" alt="Coffeequery logo" width="80" class="p-3"> <strong>Coffeequery</strong></a> <ul class="navbar-nav"><li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/" class="router-link-active">Home</a></a></li> <li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/about" class="">About</a></a></li> <li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/contact" aria-current="page" class="router-link-exact-active router-link-active">Contact</a></a></li> <li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/mockups" class="">AI Mockups</a></a></li></ul> <button type="button" class="btn btn-light"><svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="blank" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-blank b-icon bi"><g></g></svg></button></nav> <div class="sub-menu" style="display: none;"><div class="list-group"><div class="list-group-item border-0 h5 nav-custom"><span class="">About</span></div> <div class="list-group-item border-0 h5 nav-custom"><span class="">Help center</span></div> <div class="list-group-item border-0 h5 nav-custom"><span class="">Categories</span></div> <div class="list-group-item border-0 h5 nav-custom">Log in
-        </div> <div class="list-group-item border-0 h5"><button type="submit" class="btn my-2 my-sm-0 pt-2 pl-4 pr-4 become-trad btn-outline-primary btn-lg rounded-pill">Register a business</button></div></div></div></div> <div data-v-0824b7d4="" class="container"><div data-v-30c00937="" data-v-0824b7d4="" class="container"><h1 data-v-30c00937="">Links of contacts</h1> <div data-v-30c00937=""><div data-v-30c00937=""><a data-v-30c00937="" href="https://www.gmail"><img data-v-30c00937="" src="/gmail.png?eabc1a70245f1384e30960f25f9b2784" alt="Email" width="50">Email</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://www.youtube.com/coffeequery"><img data-v-30c00937="" src="/youtube.png?33c66a25ce072e0ed2b5bbb03776ff3f" alt="Youtube" width="50">Youtube</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://www.facebook.com/ziaakbariF"><img data-v-30c00937="" src="/facebook.png?23dabe90dfaadb4565540727fdaa054a" alt="Facebook" width="50">Facebook</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://www.linkedin.com/in/zia-akbari/"><img data-v-30c00937="" src="/linkedin.png?30c453b7f5fbdb09ea0cb42a5dc7a6e5" alt="LinkedIn" width="50">LinkedIn</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://twitter.com/ZiaAkbarit"><img data-v-30c00937="" src="/twitter.png?f5cb898eb3138ae3ba897f935e092be7" alt="Twitter" width="50">Twitter</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://stackoverflow.com/users/8936389/zia"><img data-v-30c00937="" src="/stackoverflow.png?5233a552c9ee105ed4533a4081c29f79" alt="Stackoverflow" width="50">Stackoverflow</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="#"><img data-v-30c00937="" src="/whatsapp.png?7695079a6a095beb110d92d0b81bac72" alt="phone number" width="50">079 377 8030</a></div></div></div></div> <div data-v-0824b7d4="" class="footer p-5">
+    <div data-v-0824b7d4="" id="app"><div data-v-0824b7d4="" class="header"><nav class="navbar px-5 py-2 navbar-light bg-faded navbar-expand"><div class="w-100 d-flex align-items-center justify-content-between"><a href="/" target="_self" class="navbar-brand d-flex align-items-center"><img src="/logo.png?bc64160216d43137f87fb2ab64939378" alt="Coffeequery logo" width="80" class="p-3"> <strong>Coffeequery</strong></a> <div class="d-flex align-items-center justify-content-between"><ul class="navbar-nav menu-in-phone"><li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/" class="router-link-active">Home</a></a></li> <li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/about" class="">About</a></a></li> <li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/contact" aria-current="page" class="router-link-exact-active router-link-active">Contact</a></a></li> <li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/mockups" class="">Ai mockups</a></a></li> <li class="nav-item"><a href="#" target="_self" class="nav-link"><a href="/posts" class="">Posts</a></a></li></ul> <button type="button" class="btn menu-btn-in-phone btn-light"><svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="list" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-list b-icon bi"><g><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></g></svg></button></div></div></nav> <div class="sub-menu" style="display: none;"><div class="list-group"><div class="list-group-item border-0 h5 nav-custom"><span class="">Home</span></div> <div class="list-group-item border-0 h5 nav-custom"><span class="">About</span></div> <div class="list-group-item border-0 h5 nav-custom"><span class="">Contact</span></div> <div class="list-group-item border-0 h5 nav-custom"><span class="">Ai mockups</span></div></div></div></div> <div data-v-0824b7d4="" class="container"><div data-v-30c00937="" data-v-0824b7d4="" class="container"><h1 data-v-30c00937="">Links of contacts</h1> <div data-v-30c00937=""><div data-v-30c00937=""><a data-v-30c00937="" href="https://www.gmail"><img data-v-30c00937="" src="/gmail.png?eabc1a70245f1384e30960f25f9b2784" alt="Email" width="50">Email</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://www.youtube.com/coffeequery"><img data-v-30c00937="" src="/youtube.png?33c66a25ce072e0ed2b5bbb03776ff3f" alt="Youtube" width="50">Youtube</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://www.facebook.com/ziaakbariF"><img data-v-30c00937="" src="/facebook.png?23dabe90dfaadb4565540727fdaa054a" alt="Facebook" width="50">Facebook</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://www.linkedin.com/in/zia-akbari/"><img data-v-30c00937="" src="/linkedin.png?30c453b7f5fbdb09ea0cb42a5dc7a6e5" alt="LinkedIn" width="50">LinkedIn</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://twitter.com/ZiaAkbarit"><img data-v-30c00937="" src="/twitter.png?f5cb898eb3138ae3ba897f935e092be7" alt="Twitter" width="50">Twitter</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="https://stackoverflow.com/users/8936389/zia"><img data-v-30c00937="" src="/stackoverflow.png?5233a552c9ee105ed4533a4081c29f79" alt="Stackoverflow" width="50">Stackoverflow</a></div> <div data-v-30c00937=""><a data-v-30c00937="" href="#"><img data-v-30c00937="" src="/whatsapp.png?7695079a6a095beb110d92d0b81bac72" alt="phone number" width="50">079 377 8030</a></div></div></div></div> <div data-v-0824b7d4="" class="footer p-5">
     @ 2020 Coffeequery. All rights reserved.
   </div></div>
   <script type="text/javascript" src="/build.js"></script>
